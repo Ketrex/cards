@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}\\src\\Ketrex.Cards.Ui\\bin\\Debug\\netcoreapp1.0\\Ketrex.Cards.Ui.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}\\src\\Ketrex.Cards.Ui",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}

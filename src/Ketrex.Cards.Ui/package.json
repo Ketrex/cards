@@ -1,0 +1,24 @@
+{
+    "author": "Kevin Walter <kevin.walter@ketrex.com>",
+    "description": "Experimental JS library for card games.",
+    "devDependencies": {
+        "tslint": "^4.0.2",
+        "rimraf": "^2.5.4",
+        "typescript": "^2.0.10",
+        "dotnet": "^1.1.2",
+        "concurrently": "^3.1.0"
+    },
+    "homepage": "https://github.com/Ketrex/cards",
+    "license": "Apache-2.0",
+    "name": "cards",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Ketrex/Cards.git"
+    },
+    "scripts": {
+        "tsc:w": "tsc -w --outDir .\\wwwroot\\app",
+        "clean": "rimraf wwwroot/app/*",
+        "start": "concurrent \"npm run tsc:w\" \"npm dotnet watch run"
+    },
+    "version": "0.1.0"
+}
